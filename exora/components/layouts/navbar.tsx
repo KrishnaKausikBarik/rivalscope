@@ -15,7 +15,7 @@ export function Navbar() {
     let mounted = true;
     (async () => {
       try {
-        const res = await fetch("https://api.github.com/repos/AdityaP700/Exora-task", { next: { revalidate: 300 } as any });
+        const res = await fetch("https://api.github.com/repos/KrishnaKausikBarik/rivalscope", { next: { revalidate: 300 } as any });
         if (!res.ok) throw new Error("Failed to load stars");
         const json = await res.json();
         if (mounted) setStars(json.stargazers_count ?? null);
@@ -51,7 +51,7 @@ export function Navbar() {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/AdityaP700/Exora-task",
+      href: "https://github.com/KrishnaKausikBarik/rivalscope",
       external: true,
     },
   ];
@@ -121,7 +121,7 @@ export function Navbar() {
             {!exaApiKey && <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-red-500 animate-pulse" />}
           </button>
           <a
-          href="https://github.com/AdityaP700/Exora-task"
+          href="https://github.com/KrishnaKausikBarik/rivalscope"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center gap-2 px-4 py-1.5 text-sm rounded-full bg-gradient-to-r from-slate-800/80 to-slate-700/60 hover:from-slate-700 hover:to-slate-600 border border-slate-600/60 text-slate-200 hover:text-white transition-colors"
@@ -152,7 +152,7 @@ export function Navbar() {
             {!exaApiKey && <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-red-500 animate-pulse" />}
           </button>
           <a
-            href="https://github.com/AdityaP700/Exora-task"
+            href="https://github.com/KrishnaKausikBarik/rivalscope"
             aria-label="GitHub repository"
             target="_blank" rel="noopener noreferrer"
             className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-slate-800/60 border border-slate-600/40 text-slate-300 hover:text-white hover:bg-slate-700/60 focus:outline-none focus:ring-2 focus:ring-cyan-400/40"
@@ -202,7 +202,7 @@ export function Navbar() {
               <span>{exaApiKey ? 'Manage Keys' : 'Add Keys'}</span>
             </button>
             <a
-              href="https://github.com/AdityaP700/Exora-task"
+              href="https://github.com/KrishnaKausikBarik/rivalscope"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 text-slate-200 text-sm"

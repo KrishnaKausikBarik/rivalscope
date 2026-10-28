@@ -21,7 +21,7 @@ export function MarketSentimentOverview() {
         <Sparkles className="w-6 h-6" />
         <div>
           <h3 className="text-lg font-semibold">Market Sentiment Overview</h3>
-          <p className="text-sm opacity-80">Exora Composite</p>
+          <p className="text-sm opacity-80">RivalScope Composite</p>
         </div>
       </div>
       <div className="h-24">

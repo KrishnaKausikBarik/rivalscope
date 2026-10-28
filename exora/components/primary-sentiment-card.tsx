@@ -35,7 +35,7 @@ export function PrimarySentimentCard({ row, loading }: PrimarySentimentCardProps
       <div className="flex justify-between items-start mb-4">
         <div>
           <h3 className="text-lg font-semibold text-white truncate max-w-full">{row?.domain || '—'}</h3>
-          <p className="text-xs text-slate-400">Exora Signals</p>
+          <p className="text-xs text-slate-400">RivalScope Signals</p>
         </div>
         <div className="flex flex-col items-end gap-1">
           <Badge variant="secondary" className="text-[10px] bg-cyan-400/10 text-cyan-300 border border-cyan-400/20">Primary</Badge>

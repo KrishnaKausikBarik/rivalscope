@@ -1,5 +1,5 @@
 "use client"
-import { ExoraLogo } from "./exora-logo"
+import { RivalScopeLogo } from "./rivalscope-logo"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -23,8 +23,8 @@ export function DashboardHeader({ activeTab, onTabChange, showSearch, onSearchTo
       <div className="flex items-center justify-between mb-4">
         {/* Logo and Brand */}
         <div className="flex items-center gap-3">
-          <ExoraLogo />
-          <h1 className="text-xl font-semibold text-foreground">Exora</h1>
+          <RivalScopeLogo />
+          <h1 className="text-xl font-semibold text-foreground">RivalScope</h1>
         </div>
 
         {/* User Controls */}

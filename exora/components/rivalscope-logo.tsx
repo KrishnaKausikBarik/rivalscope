@@ -1,4 +1,4 @@
-export function ExoraLogo({ className = "w-8 h-8" }: { className?: string }) {
+export function RivalScopeLogo({ className = "w-8 h-8" }: { className?: string }) {
   return (
     <div className={`${className} flex items-center justify-center`}>
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to Exora dark theme color system */
+  /* Updated to RivalScope dark theme color system */
   --background: #1a1f2e;
   --foreground: #ffffff;
   --card: #2c3e50;
@@ -39,15 +39,24 @@
   --sidebar-border: #34495e;
   --sidebar-ring: #3498db;
 
-  /* Added Exora-specific color variables */
-  --exora-dark: #1a1f2e;
-  --exora-card: #2c3e50;
-  --exora-blue: #3498db;
-  --exora-orange: #f39c12;
-  --exora-green: #2ecc71;
-  --exora-red: #e74c3c;
-  --exora-gray: #95a5a6;
-  --exora-muted: #7f8c8d;
+  /* Added RivalScope-specific color variables */
+  --rivalscope-dark: #1a1f2e;
+  --rivalscope-card: #2c3e50;
+  --rivalscope-blue: #3498db;
+  --rivalscope-orange: #f39c12;
+  --rivalscope-green: #2ecc71;
+  --rivalscope-red: #e74c3c;
+  --rivalscope-gray: #95a5a6;
+  --rivalscope-muted: #7f8c8d;
+
+  --exora-dark: var(--rivalscope-dark);
+  --exora-card: var(--rivalscope-card);
+  --exora-blue: var(--rivalscope-blue);
+  --exora-orange: var(--rivalscope-orange);
+  --exora-green: var(--rivalscope-green);
+  --exora-red: var(--rivalscope-red);
+  --exora-gray: var(--rivalscope-gray);
+  --exora-muted: var(--rivalscope-muted);
 }
 
 .dark {
@@ -131,15 +140,24 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Added Exora theme colors to Tailwind */
-  --color-exora-dark: var(--exora-dark);
-  --color-exora-card: var(--exora-card);
-  --color-exora-blue: var(--exora-blue);
-  --color-exora-orange: var(--exora-orange);
-  --color-exora-green: var(--exora-green);
-  --color-exora-red: var(--exora-red);
-  --color-exora-gray: var(--exora-gray);
-  --color-exora-muted: var(--exora-muted);
+  /* Added RivalScope theme colors to Tailwind */
+  --color-rivalscope-dark: var(--rivalscope-dark);
+  --color-rivalscope-card: var(--rivalscope-card);
+  --color-rivalscope-blue: var(--rivalscope-blue);
+  --color-rivalscope-orange: var(--rivalscope-orange);
+  --color-rivalscope-green: var(--rivalscope-green);
+  --color-rivalscope-red: var(--rivalscope-red);
+  --color-rivalscope-gray: var(--rivalscope-gray);
+  --color-rivalscope-muted: var(--rivalscope-muted);
+
+  --color-exora-dark: var(--rivalscope-dark);
+  --color-exora-card: var(--rivalscope-card);
+  --color-exora-blue: var(--rivalscope-blue);
+  --color-exora-orange: var(--rivalscope-orange);
+  --color-exora-green: var(--rivalscope-green);
+  --color-exora-red: var(--rivalscope-red);
+  --color-exora-gray: var(--rivalscope-gray);
+  --color-exora-muted: var(--rivalscope-muted);
 }
 
 @layer base {
@@ -170,7 +188,7 @@
   }
 }
 
-/* Added custom utility classes for Exora theme */
+/* Added custom utility classes for RivalScope theme */
 @layer utilities {
   .text-balance {
     text-wrap: balance;

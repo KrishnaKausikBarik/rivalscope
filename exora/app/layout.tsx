@@ -7,9 +7,8 @@ import { Providers } from "@/components/providers";
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Exora Analytics Dashboard",
-  description: "Comprehensive analytics dashboard for actionable insights",
-  generator: "v0.app",
+  title: "RivalScope - AI Competitive Intelligence Platform",
+  description: "AI-powered competitive intelligence platform that delivers real-time competitor research, company news, market sentiment analysis, and executive insights using Exa search and LLM integrations.",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -39,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <p className="leading-relaxed">
                     <span className="font-semibold text-slate-200">Data Scope:</span> News & web insights are point‑in‑time and may omit recent changes. No guarantee of exhaustiveness or regulatory compliance.
                   </p>
-                  <p className="pt-2 text-slate-500">© {new Date().getFullYear()} Exora. All rights reserved.</p>
+                  <p className="pt-2 text-slate-500">© {new Date().getFullYear()} RivalScope. All rights reserved.</p>
                 </div>
               </footer>
             </Providers>

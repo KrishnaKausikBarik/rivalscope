@@ -70,7 +70,7 @@ function DashboardSkeleton() {
   );
 }
 
-export default function ExoraPage() {
+export default function RivalScopePage() {
   // Staged progressive state
   const [domain, setDomain] = useState<string>("");
   const [overview, setOverview] = useState<string>("");
@@ -120,7 +120,7 @@ export default function ExoraPage() {
   const [resumePrompt, setResumePrompt] = useState(false);
   useEffect(() => {
     try {
-      const cachedQuery = localStorage.getItem("exora:lastQuery");
+      const cachedQuery = localStorage.getItem("rivalscope:lastQuery");
       if (cachedQuery) {
         setLastQuery(cachedQuery);
         setResumePrompt(true);
@@ -199,7 +199,7 @@ export default function ExoraPage() {
       setLastQuery(cleanedDomain);
       setDomain(cleanedDomain);
       try {
-        localStorage.setItem("exora:lastQuery", cleanedDomain);
+        localStorage.setItem("rivalscope:lastQuery", cleanedDomain);
       } catch {}
 
       // Ensure Exa key present (BYOK gating)

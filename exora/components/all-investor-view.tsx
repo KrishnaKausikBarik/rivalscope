@@ -38,7 +38,7 @@ export function AllInvestorView({ data }: Props) {
             <InsightCard
               key={index}
               title={item.domain}
-              source="Exora Signals"
+              source="RivalScope Signals"
               sentiment={toSentiment(item.sentimentScore)}
               trend={toTrend(item.narrativeMomentum)}
               data={historicalMentions}
@@ -65,7 +65,7 @@ export function AllInvestorView({ data }: Props) {
         <div className="lg:col-span-1">
           <InsightCard
             title="Market Sentiment Overview"
-            source="Exora Composite"
+            source="RivalScope Composite"
             sentiment={toSentiment(avgSentiment)}
             trend={toTrend(avgMomentum)}
             data={data.benchmarkMatrix.map(item => item.sentimentScore ?? 0)}

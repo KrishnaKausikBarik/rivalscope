@@ -23,7 +23,7 @@ export function SummaryView({ data, context, briefing }: Props) {
   const handleShare = async () => {
     try {
       const shareData = {
-        title: 'Exora Briefing',
+        title: 'RivalScope Briefing',
         text: 'Quick briefing summary',
         url: typeof window !== 'undefined' ? window.location.href : ''
       };

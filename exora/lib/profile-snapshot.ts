@@ -4,7 +4,7 @@ import { safeGenerateJson, safeGenerateText, ProviderConfig } from '@/lib/llm-se
 // Simple in-memory cache (per server instance)
 interface SnapshotCacheEntry { profile: CompanyProfile; ts: number }
 const SNAPSHOT_TTL_MS = 1000 * 60 * 60 // 1 hour
-const globalCache: Record<string, SnapshotCacheEntry> = (global as any).__exoraProfileCache || ((global as any).__exoraProfileCache = {})
+const globalCache: Record<string, SnapshotCacheEntry> = (global as any).__rivalscopeProfileCache || ((global as any).__rivalscopeProfileCache = {})
 
 export async function getOrGenerateProfileSnapshot(domain: string, providers: ProviderConfig[], forceRefresh = false): Promise<CompanyProfile> {
   const key = domain.toLowerCase()

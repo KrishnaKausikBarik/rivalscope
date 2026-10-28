@@ -4,12 +4,12 @@ import { safeGenerateJson, safeGenerateText, ProviderConfig } from '@/lib/llm-se
 // In-memory cache for canonical info
 interface CanonicalInfo { canonicalName: string; aliases: string[]; industryHint?: string; brandTokens: string[]; ts: number }
 const TTL = 1000 * 60 * 60 // 1 hour
-const cache: Record<string, CanonicalInfo> = (global as any).__exoraCanonicalCache || ((global as any).__exoraCanonicalCache = {})
+const cache: Record<string, CanonicalInfo> = (global as any).__rivalscopeCanonicalCache || ((global as any).__rivalscopeCanonicalCache = {})
 
 async function fetchHtml(domain: string): Promise<string> {
   const url = domain.startsWith('http') ? domain : `https://${domain}`
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (ExoraBot CanonicalFetcher)' }, next: { revalidate: 300 } as any })
+    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (RivalScopeBot CanonicalFetcher)' }, next: { revalidate: 300 } as any })
     if (!res.ok) return ''
     return await res.text()
   } catch {

@@ -1,6 +1,6 @@
-# Exora Competitive Intelligence Dashboard
+# RivalScope Competitive Intelligence Dashboard
 
-Real‑time competitive & sentiment briefing for any company domain. Paste a domain (e.g. `stripe.com`) and Exora streams a staged multi‑source analysis: overview → canonical/aliases → enriched profile → founders & socials → competitors → company news → competitor news → sentiment & momentum → executive summary.
+Real‑time competitive & sentiment briefing for any company domain. Paste a domain (e.g. `stripe.com`) and RivalScope streams a staged multi‑source analysis: overview → canonical/aliases → enriched profile → founders & socials → competitors → company news → competitor news → sentiment & momentum → executive summary.
 
 ---
 ## ✨ Core Features
@@ -167,14 +167,10 @@ GEMINI_API_KEY=...
 ```
 
 ---
-## ⭐ Contributing / Star the Repo
-If this project helps you, consider starring it. Feature ideas & PRs welcome.
+## ⭐ Star the Repo
+If this project helps you, consider starring it.
 
-Repository: https://github.com/AdityaP700/Exora-task
-
----
-## 📄 License
-MIT (add LICENSE file if not present).
+Repository: https://github.com/KrishnaKausikBarik/rivalscope
 
 ---
 ## � Responsive Design

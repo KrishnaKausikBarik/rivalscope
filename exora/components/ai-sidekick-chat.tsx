@@ -160,7 +160,7 @@ export function AISidekickChat({ data, fullWidth }: Props) {
 
       {/* Footer */}
       <div className="px-4 py-2 text-center text-xs text-slate-400 flex-none">
-        Powered by Exora — answers restricted to briefing data only
+        Powered by RivalScope — answers restricted to briefing data only
       </div>
     </div>
   )

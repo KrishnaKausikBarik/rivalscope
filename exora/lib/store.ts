@@ -88,7 +88,7 @@ export const useApiKeyStore = create<ApiKeyState>()(
       closeModal: () => set({ isModalOpen: false }),
     }),
     {
-      name: 'exora-api-keys', // Name for localStorage persistence
+      name: 'rivalscope-api-keys', // Name for localStorage persistence
       version: 2,
       migrate: (persisted: any) => {
         // Backwards compatibility: ensure validation state exists
